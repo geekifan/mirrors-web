@@ -58,7 +58,7 @@ README.zh.md        项目README（中文）
 
 ## 致谢
 
-本项目在开发过程中的交互设计、代码逻辑受到了目前多个镜像站的启发，在此特别鸣谢[清华大学开源软件镜像站]([https://](https://mirrors.tuna.tsinghua.edu.cn/))、[哈尔滨工业大学开源镜像站](https://mirrors.hit.edu.cn/)、[中科大开源软件镜像站](https://mirrors.ustc.edu.cn/)。
+本项目在开发过程中的交互设计、代码逻辑受到了目前多个镜像站的启发，在此特别鸣谢 [清华大学开源软件镜像站]([https://(https://mirrors.tuna.tsinghua.edu.cn/))、[哈尔滨工业大学开源镜像站](https://mirrors.hit.edu.cn/)、[中科大开源软件镜像站](https://mirrors.ustc.edu.cn/)。
 
 特别鸣谢[@TechCiel](https://github.com/TechCiel)对本项目的大力支持和帮助。
 
