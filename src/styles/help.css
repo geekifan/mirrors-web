@@ -1,0 +1,105 @@
+.tab-item {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+
+/* tab标签样式 */
+.tab-item {
+  display: block;
+  background-color: white;
+  color: #2c61bc;
+  text-decoration: none;
+  padding: 10px 0px 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  width: 80%;
+}
+
+/* tab标签active样式 */
+.router-link-active {
+  color: white !important;
+  background-color: #2c61bc !important;
+}
+
+/* tab标签hover样式 */
+.tab-item:hover {
+  background-color: #e6e6e6;
+  color: #2c61bc;
+}
+
+/* tab边栏样式 */
+.tab-container {
+  max-height: 65vh;
+  overflow-y: scroll;
+}
+
+/* tab边栏滚动条样式 */
+.tab-container::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 4px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+
+.tab-container::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.tab-container:hover::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  background-color: #a2a2a2;
+}
+
+.tab-container::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 1920px) {
+  .title {
+    padding-left: 0;
+  }
+
+  .help-detail {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .title {
+    padding-left: 5%;
+  }
+
+  .help-detail {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    padding-left: 5%;
+  }
+
+  .help-detail {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .title {
+    padding-left: 0;
+  }
+
+  .help-detail {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

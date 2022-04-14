@@ -1,0 +1,28 @@
+/* mirror-list styles */
+
+.mirror-name {
+    color: #313131;
+}
+
+svg.official {
+    width: 14px;
+    height: 14px;
+    fill: gold;
+    margin-bottom: -0.2em;
+    margin-right: 2px;
+}
+
+svg.help {
+    width: 14px;
+    height: 14px;
+    fill: black;
+    margin-bottom: -0.2em;
+    margin-right: 2px;
+}
+
+.search-box {
+    width: 50%;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: 0;
+}

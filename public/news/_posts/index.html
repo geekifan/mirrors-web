@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Designed by TechCiel
+    Copyright 2022-present Jilin University Linux User Group
+    Licensed under AGPLv3
+-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" type="image/svg" href="../static/logo.svg">
+    <link rel="stylesheet" href="../static/pure.min.css">
+    <link rel="stylesheet" href="../static/common.css">
+    <link rel="stylesheet" href="../static/news.css">
+</head>
+<body>
+    <div id="app" v-cloak>
+        <header>
+            <nav>
+                <a @click="switchLang">中文 / English</a>
+                <a href="../">{{ _.back }}</a>
+            </nav>
+            <div>
+                <img src="../static/logo.svg">
+                <h1 v-html="_.title"></h1>
+            </div>
+        </header>
+        <main v-if="current" v-html="content">
+        </main>
+        <main id="list" v-if="!current">
+            <h2>{{ _.news }}</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>{{ _.tableTitle }}</th>
+                        <th>{{ _.tableDate }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="post in news">
+                        <td><a @click="update(post.name)">{{ post.text }}</a></td>
+                        <td>{{ post.date }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <div v-html="_.legal" id="legal"></div>
+            <div id="logo">
+                <p><span style="font-size:2em; font-weight:400">LUG</span> <span style="font-size:2em; font-weight:100">@ JLU</span></p>
+                <p>Made with &lt;3</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const i18n = {
+            en: {
+                title: 'Jilin&nbsp;University Open&#8209;source&nbsp;Mirrors',
+                titleText: 'Jilin University Open-source Mirrors',
+                back: 'Back to Mirrors',
+                news: 'News',
+                tableTitle: 'Title',
+                tableDate: 'Date',
+                legal: '<p>This service is supported by the Network Information Center of Jilin University, maintained by Jilin University Linux User Group.</p>\
+                    <p>Jilin University Linux User Group is formed by GNU/Linux users and enthusiasts in JLU, advocating the use of GNU/Linux, promoting the value of free software, and cultivate an ambience of an open community.</p>\
+                    <p>JLU Mirrors joined MirrorZ.org to provide a better experience.</p>\
+                    <p>The source code of this service could be found at GitHub.</p>',
+            },
+            zh: {
+                title: '吉林大学开源镜像站',
+                titleText: '吉林大学开源镜像站',
+                back: '回到主站',
+                news: '镜像站新闻',
+                tableTitle: '标题',
+                tableDate: '发布日期',
+                legal: '<p>本站由吉林大学大数据与网络中心支持创办，由吉林大学 Linux 用户协会运行维护。</p>\
+                    <p>吉林大学 Linux 用户协会是由吉林大学的 GNU/Linux 用户与爱好者自愿结成的社团，旨在联络沟通同道中人，推广 GNU/Linux 的使用，宣传自由软件的价值，培养开放社区氛围。</p>\
+                    <p>吉林大学开源镜像站加入了 MirrorZ.org 和教育网联合镜像站，以提供更好的使用体验。</p>\
+                    <p>本站的源代码在 GitHub 以 AGPLv3 协议开源。</p>',
+            }
+        }
+    </script>
+    <script src="../static/vue.js"></script>
+    <script src="../static/marked.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="../static/news.js"></script>
+</body>
+</html>

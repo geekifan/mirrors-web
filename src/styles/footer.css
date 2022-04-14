@@ -1,0 +1,20 @@
+/* footer styles */
+
+a {
+    color: #0E419C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.legal {
+    flex-shrink: 99999;
+}
+
+.logo {
+    flex-basis: 14em;
+    text-align: center;
+}
