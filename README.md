@@ -33,6 +33,7 @@ npm run build
 ## 目录结构
 
 ```
+docs/               开发文档
 public/             用于构建生产环境代码的静态资源
 src/                源代码            
 .browserslistrc     浏览器兼容性配置文件
@@ -44,7 +45,6 @@ package-lock.json   npm依赖管理文件
 package.json        npm依赖管理文件
 vue.config.js       Vue配置文件
 README.md           项目README
-README.zh.md        项目README（中文）
 
 ```
 
@@ -97,6 +97,7 @@ The generated code for production is stored in `dist/`.
 ## Structure
 
 ```
+docs/               development docs
 public/             static files for production compilation
 src/                source code         
 .browserslistrc     config file for browser compatibility
@@ -108,7 +109,6 @@ package-lock.json   npm dependencies config file
 package.json        npm dependencies config file
 vue.config.js       Vue config file
 README.md           README
-README.zh.md        README (Chinese Simplified)
 
 ```
 
