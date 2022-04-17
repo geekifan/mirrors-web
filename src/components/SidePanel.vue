@@ -66,51 +66,11 @@
             <span><i class="el-icon-connection"></i>{{ $t("side-panel.links") }}</span>
           </div>
           <table>
-            <tr>
+            <tr v-for="(item, index) in $GLOBAL.sidePanelLinks" :key="index">
               <td>
-                <a @click="pushHelpRoute('')" target="_blank">
+                <a :href="item.href">
                   <i class="el-icon-link"></i>
-                  {{ $t("side-panel.help") }}
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="https://github.com/jlulug/issues/issues/new/choose" target="_blank">
-                  <i class="el-icon-link"></i>
-                  {{ $t("side-panel.mirror-request") }}
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="https://github.com/jlulug/issues/issues/new/choose" target="_blank">
-                  <i class="el-icon-link"></i>
-                  {{ $t("side-panel.report-problem") }}
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="https://jlulug.org" target="_blank">
-                  <i class="el-icon-link"></i>
-                  {{ $t("side-panel.jlulug") }}
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="https://nic.jlu.edu.cn" target="_blank">
-                  <i class="el-icon-link"></i>
-                  {{ $t("side-panel.jlunic") }}
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a onclick="this.href=atob('==gbj5SdkVmL1xmaANncvJncp1mOvRHbpFWb'.split('').reverse().join(''))" href target="_blank">
-                  <i class="el-icon-link"></i>
-                  {{ $t("side-panel.contact") }}
+                  {{ $t(item.i18nName) }}
                 </a>
               </td>
             </tr>

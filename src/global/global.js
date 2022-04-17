@@ -12,6 +12,24 @@ const infoRequestPath = "/info.json"
 const homeTitle = "吉林大学开源镜像站"
 const helpTitle = "帮助 - 吉林大学开源镜像站"
 const newsTitle = "新闻 - 吉林大学开源镜像站"
+const sidePanelLinks = [
+    {
+        i18nName: "side-panel.mirror-request",
+        href: "https://github.com/jlulug/issues/issues/new/choose",
+    },
+    {
+        i18nName: "side-panel.report-problem",
+        href: "https://github.com/jlulug/issues/issues/new/choose",
+    },
+    {
+        i18nName: "side-panel.jlulug",
+        href: "https://jlulug.org",
+    },
+    {
+        i18nName: "side-panel.jlunic",
+        href: "https://nic.jlu.edu.cn",
+    },
+]
 
 export default {
     helpRootPath,
@@ -25,4 +43,5 @@ export default {
     homeTitle,
     helpTitle,
     newsTitle,
+    sidePanelLinks
 }
